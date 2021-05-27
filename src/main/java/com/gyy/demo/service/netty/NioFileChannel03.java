@@ -24,8 +24,6 @@ public class NioFileChannel03 {
             if(read == -1){
                 break;
             }
-
-
             byteBuffer.flip();
             fileChannel2.write(byteBuffer);
         }
