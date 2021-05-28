@@ -19,5 +19,6 @@ public class NioFileChannel02 {
         System.out.println(new String(byteBuffer.array()));
         fileInputStream.close();
 
+
     }
 }
