@@ -2,7 +2,6 @@ package com.gyy.demo.service.netty;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -18,7 +17,6 @@ public class NioFileChannel02 {
         fileChannel.read(byteBuffer);
         System.out.println(new String(byteBuffer.array()));
         fileInputStream.close();
-
 
     }
 }
