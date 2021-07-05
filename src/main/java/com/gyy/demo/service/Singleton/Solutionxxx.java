@@ -13,7 +13,6 @@ public class Solutionxxx {
             x = x/10;
             rev = rev*10 + digit;
         }
-
         return  rev;
     }
 
