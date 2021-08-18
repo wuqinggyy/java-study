@@ -8,7 +8,7 @@ public class ThreadPoolExecutorDemo {
 
     private static final int CORE_POOL_SIZE = 2;
     private static final int MAX_POOL_SIZE = 10;
-    private static final int QUEUE_CAPACITY = 100;
+    private static final int QUEUE_CAPACITY = 5;
     private static final Long KEEP_ALIVE_TIME = 1L;
 
     public static void main(String[] args) {
@@ -20,8 +20,8 @@ public class ThreadPoolExecutorDemo {
                 new ArrayBlockingQueue<>(QUEUE_CAPACITY),
                 new ThreadPoolExecutor.CallerRunsPolicy());
 
-        for (int i = 0; i <10; i++) {
-           Runnable worker  = new MyRunnable(""+i);
+        for (int i = 0; i <500; i++) {
+           Runnable worker  = new MyRunnable("" + i);
            executor.execute(worker);
         }
         executor.shutdown();

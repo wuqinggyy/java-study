@@ -14,9 +14,9 @@ public class MyRunnable implements Runnable{
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName() +  " Start. Time = " + new Date());
-        sleep();
-        System.out.println(Thread.currentThread().getName() +  " end. Time = " + new Date());
+        System.out.println(Thread.currentThread().getName() +  " Start. Time = " + new Date() + "-------------" + a);
+//        sleep();
+        System.out.println(Thread.currentThread().getName() +  " end. Time = " + new Date() + "-------------" + a);
     }
 
     private void sleep(){
