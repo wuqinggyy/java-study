@@ -1,4 +1,4 @@
-package com.gyy.demo.shouxie;
+package com.gyy.demo.juc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +40,7 @@ public class WaitTest {
         }, "t1");
 
         Thread t2 = new Thread(() -> {
+
             System.out.println("t2 qidong");
             synchronized (lock) {
                 if (waitTest.size() != 5) {
